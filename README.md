@@ -340,9 +340,5 @@ Create the Final ERD
 
 The final design is based on the functional dependencies found in the source data.
 
-## Submission
-
-All required files are included in the `week2/` folder of the `cit408-coralbay` repository.
-
 **Student:** Daniel Zayas
 **Course:** CIT 408 — Database Design
