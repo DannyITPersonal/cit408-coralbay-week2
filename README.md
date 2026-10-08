@@ -2,7 +2,7 @@
 
 **Student:** Daniel Zayas
 **Course:** CIT 408 — Database Design
-**Project:** Coral Bay Fleet Maintenance Work Orders
+**Assignment** Coral Bay Fleet Maintenance Work Orders
 **Repository:** `cit408-coralbay`
 **Folder:** `week2/`
 
