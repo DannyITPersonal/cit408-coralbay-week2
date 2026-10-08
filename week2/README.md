@@ -342,3 +342,4 @@ The final design is based on the functional dependencies found in the source dat
 
 **Student:** Daniel Zayas
 **Course:** CIT 408 — Database Design
+https://github.com/DannyITPersonal/cit408-coralbay-week2/tree/main/week2
