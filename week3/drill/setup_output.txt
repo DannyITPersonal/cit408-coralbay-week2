@@ -1,0 +1,17 @@
+SET
+DROP SCHEMA
+CREATE SCHEMA
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 500
+INSERT 0 20000
+INSERT 0 50000
+ANALYZE
+ customers | dispatches | dispatch_lines | total_freight 
+-----------+------------+----------------+---------------
+       500 |      20000 |          50000 |   24861897.65
+(1 row)
+
+Setup complete. Take your base backup now, before you run w3_drill_incident.sql.

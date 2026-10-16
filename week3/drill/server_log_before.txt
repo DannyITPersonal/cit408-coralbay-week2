@@ -1,0 +1,108 @@
+2026-10-15T19:51:06.075998486Z The files belonging to this database system will be owned by user "postgres".
+2026-10-15T19:51:06.076063286Z This user must also own the server process.
+2026-10-15T19:51:06.076085887Z 
+2026-10-15T19:51:06.076089487Z The database cluster will be initialized with locale "en_US.utf8".
+2026-10-15T19:51:06.076091987Z The default database encoding has accordingly been set to "UTF8".
+2026-10-15T19:51:06.076094287Z The default text search configuration will be set to "english".
+2026-10-15T19:51:06.076096987Z 
+2026-10-15T19:51:06.076099187Z Data page checksums are enabled.
+2026-10-15T19:51:06.076101587Z 
+2026-10-15T19:51:06.076103587Z fixing permissions on existing directory /var/lib/postgresql/18/docker ... ok
+2026-10-15T19:51:06.076107987Z creating subdirectories ... ok
+2026-10-15T19:51:06.076668591Z selecting dynamic shared memory implementation ... posix
+2026-10-15T19:51:06.099692987Z selecting default "max_connections" ... 100
+2026-10-15T19:51:06.136051296Z selecting default "shared_buffers" ... 128MB
+2026-10-15T19:51:06.136427399Z selecting default time zone ... UTC
+2026-10-15T19:51:06.137854311Z creating configuration files ... ok
+2026-10-15T19:51:06.339867827Z running bootstrap script ... ok
+2026-10-15T19:51:06.987296627Z performing post-bootstrap initialization ... ok
+2026-10-15T19:51:07.605969183Z syncing data to disk ... ok
+2026-10-15T19:51:07.606028483Z 
+2026-10-15T19:51:07.606037283Z 
+2026-10-15T19:51:07.606040083Z Success. You can now start the database server using:
+2026-10-15T19:51:07.606042983Z 
+2026-10-15T19:51:07.606045483Z     pg_ctl -D /var/lib/postgresql/18/docker -l logfile start
+2026-10-15T19:51:07.606048283Z 
+2026-10-15T19:51:07.606246385Z initdb: warning: enabling "trust" authentication for local connections
+2026-10-15T19:51:07.606256185Z initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+2026-10-15T19:51:07.689005688Z waiting for server to start....2026-10-15 19:51:07.688 UTC [53] LOG:  starting PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-10-15T19:51:07.695347742Z 2026-10-15 19:51:07.695 UTC [53] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-10-15T19:51:07.719914151Z 2026-10-15 19:51:07.719 UTC [59] LOG:  database system was shut down at 2026-10-15 19:51:06 UTC
+2026-10-15T19:51:07.728914427Z 2026-10-15 19:51:07.728 UTC [53] LOG:  database system is ready to accept connections
+2026-10-15T19:51:07.742914946Z  done
+2026-10-15T19:51:07.742933846Z server started
+2026-10-15T19:51:07.814470954Z 
+2026-10-15T19:51:07.814502254Z /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+2026-10-15T19:51:07.814580055Z 
+2026-10-15T19:51:07.816378470Z waiting for server to shut down...2026-10-15 19:51:07.816 UTC [53] LOG:  received fast shutdown request
+2026-10-15T19:51:07.821971717Z .2026-10-15 19:51:07.821 UTC [53] LOG:  aborting any active transactions
+2026-10-15T19:51:07.826272054Z 2026-10-15 19:51:07.825 UTC [53] LOG:  background worker "logical replication launcher" (PID 65) exited with exit code 1
+2026-10-15T19:51:07.829978485Z 2026-10-15 19:51:07.829 UTC [57] LOG:  shutting down
+2026-10-15T19:51:07.866055492Z cp: cannot create regular file '/archive/000000010000000000000001': Permission denied
+2026-10-15T19:51:07.866608197Z 2026-10-15 19:51:07.866 UTC [57] LOG:  checkpoint starting: shutdown immediate
+2026-10-15T19:51:07.867147601Z 2026-10-15 19:51:07.867 UTC [64] LOG:  archive command failed with exit code 1
+2026-10-15T19:51:07.867163201Z 2026-10-15 19:51:07.867 UTC [64] DETAIL:  The failed archive command was: test ! -f /archive/000000010000000000000001 && cp pg_wal/000000010000000000000001 /archive/000000010000000000000001
+2026-10-15T19:51:08.031671999Z 2026-10-15 19:51:08.031 UTC [57] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.020 s, total=0.173 s; sync files=2, longest=0.014 s, average=0.010 s; distance=8825 kB, estimate=8825 kB; lsn=0/2000028, redo lsn=0/2000028
+2026-10-15T19:51:08.034753425Z cp: cannot create regular file '/archive/000000010000000000000001': Permission denied
+2026-10-15T19:51:08.035260229Z 2026-10-15 19:51:08.035 UTC [64] LOG:  archive command failed with exit code 1
+2026-10-15T19:51:08.035275129Z 2026-10-15 19:51:08.035 UTC [64] DETAIL:  The failed archive command was: test ! -f /archive/000000010000000000000001 && cp pg_wal/000000010000000000000001 /archive/000000010000000000000001
+2026-10-15T19:51:09.039786963Z .cp: cannot create regular file '/archive/000000010000000000000001': Permission denied
+2026-10-15T19:51:09.040564669Z 2026-10-15 19:51:09.040 UTC [64] LOG:  archive command failed with exit code 1
+2026-10-15T19:51:09.040579369Z 2026-10-15 19:51:09.040 UTC [64] DETAIL:  The failed archive command was: test ! -f /archive/000000010000000000000001 && cp pg_wal/000000010000000000000001 /archive/000000010000000000000001
+2026-10-15T19:51:09.040583269Z 2026-10-15 19:51:09.040 UTC [64] WARNING:  archiving write-ahead log file "000000010000000000000001" failed too many times, will try again later
+2026-10-15T19:51:09.044074099Z cp: cannot create regular file '/archive/000000010000000000000001': Permission denied
+2026-10-15T19:51:09.044476002Z 2026-10-15 19:51:09.044 UTC [64] LOG:  archive command failed with exit code 1
+2026-10-15T19:51:09.044486203Z 2026-10-15 19:51:09.044 UTC [64] DETAIL:  The failed archive command was: test ! -f /archive/000000010000000000000001 && cp pg_wal/000000010000000000000001 /archive/000000010000000000000001
+2026-10-15T19:51:10.048575353Z .cp: cannot create regular file '/archive/000000010000000000000001': Permission denied
+2026-10-15T19:51:10.050237720Z 2026-10-15 19:51:10.050 UTC [64] LOG:  archive command failed with exit code 1
+2026-10-15T19:51:10.050266720Z 2026-10-15 19:51:10.050 UTC [64] DETAIL:  The failed archive command was: test ! -f /archive/000000010000000000000001 && cp pg_wal/000000010000000000000001 /archive/000000010000000000000001
+2026-10-15T19:51:11.053936909Z .cp: cannot create regular file '/archive/000000010000000000000001': Permission denied
+2026-10-15T19:51:11.055502322Z 2026-10-15 19:51:11.055 UTC [64] LOG:  archive command failed with exit code 1
+2026-10-15T19:51:11.055522122Z 2026-10-15 19:51:11.055 UTC [64] DETAIL:  The failed archive command was: test ! -f /archive/000000010000000000000001 && cp pg_wal/000000010000000000000001 /archive/000000010000000000000001
+2026-10-15T19:51:11.055526922Z 2026-10-15 19:51:11.055 UTC [64] WARNING:  archiving write-ahead log file "000000010000000000000001" failed too many times, will try again later
+2026-10-15T19:51:11.091329608Z 2026-10-15 19:51:11.090 UTC [53] LOG:  database system is shut down
+2026-10-15T19:51:11.123891767Z  done
+2026-10-15T19:51:11.123920367Z server stopped
+2026-10-15T19:51:11.125980684Z 
+2026-10-15T19:51:11.126014984Z PostgreSQL init process complete; ready for start up.
+2026-10-15T19:51:11.126020084Z 
+2026-10-15T19:51:11.167970719Z 2026-10-15 19:51:11.167 UTC [1] LOG:  starting PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-10-15T19:51:11.168244821Z 2026-10-15 19:51:11.168 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-10-15T19:51:11.168254721Z 2026-10-15 19:51:11.168 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-10-15T19:51:11.178642104Z 2026-10-15 19:51:11.178 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-10-15T19:51:11.209106047Z 2026-10-15 19:51:11.207 UTC [86] LOG:  database system was shut down at 2026-10-15 19:51:08 UTC
+2026-10-15T19:51:11.222511154Z 2026-10-15 19:51:11.222 UTC [1] LOG:  database system is ready to accept connections
+2026-10-15T19:51:11.237349272Z cp: cannot create regular file '/archive/000000010000000000000001': Permission denied
+2026-10-15T19:51:11.237865976Z 2026-10-15 19:51:11.237 UTC [89] LOG:  archive command failed with exit code 1
+2026-10-15T19:51:11.237887876Z 2026-10-15 19:51:11.237 UTC [89] DETAIL:  The failed archive command was: test ! -f /archive/000000010000000000000001 && cp pg_wal/000000010000000000000001 /archive/000000010000000000000001
+2026-10-15T19:51:12.241364577Z cp: cannot create regular file '/archive/000000010000000000000001': Permission denied
+2026-10-15T19:51:12.242022783Z 2026-10-15 19:51:12.241 UTC [89] LOG:  archive command failed with exit code 1
+2026-10-15T19:51:12.242041983Z 2026-10-15 19:51:12.241 UTC [89] DETAIL:  The failed archive command was: test ! -f /archive/000000010000000000000001 && cp pg_wal/000000010000000000000001 /archive/000000010000000000000001
+2026-10-15T19:51:13.246573693Z cp: cannot create regular file '/archive/000000010000000000000001': Permission denied
+2026-10-15T19:51:13.247327499Z 2026-10-15 19:51:13.247 UTC [89] LOG:  archive command failed with exit code 1
+2026-10-15T19:51:13.247357799Z 2026-10-15 19:51:13.247 UTC [89] DETAIL:  The failed archive command was: test ! -f /archive/000000010000000000000001 && cp pg_wal/000000010000000000000001 /archive/000000010000000000000001
+2026-10-15T19:51:13.247362299Z 2026-10-15 19:51:13.247 UTC [89] WARNING:  archiving write-ahead log file "000000010000000000000001" failed too many times, will try again later
+2026-10-15T19:52:13.306554871Z cp: cannot create regular file '/archive/000000010000000000000001': Permission denied
+2026-10-15T19:52:13.307131774Z 2026-10-15 19:52:13.306 UTC [89] LOG:  archive command failed with exit code 1
+2026-10-15T19:52:13.307150174Z 2026-10-15 19:52:13.306 UTC [89] DETAIL:  The failed archive command was: test ! -f /archive/000000010000000000000001 && cp pg_wal/000000010000000000000001 /archive/000000010000000000000001
+2026-10-15T19:52:14.311182245Z cp: cannot create regular file '/archive/000000010000000000000001': Permission denied
+2026-10-15T19:52:14.312040150Z 2026-10-15 19:52:14.311 UTC [89] LOG:  archive command failed with exit code 1
+2026-10-15T19:52:14.312060250Z 2026-10-15 19:52:14.311 UTC [89] DETAIL:  The failed archive command was: test ! -f /archive/000000010000000000000001 && cp pg_wal/000000010000000000000001 /archive/000000010000000000000001
+2026-10-15T19:52:15.316586436Z cp: cannot create regular file '/archive/000000010000000000000001': Permission denied
+2026-10-15T19:52:15.316718236Z 2026-10-15 19:52:15.316 UTC [89] LOG:  archive command failed with exit code 1
+2026-10-15T19:52:15.316735836Z 2026-10-15 19:52:15.316 UTC [89] DETAIL:  The failed archive command was: test ! -f /archive/000000010000000000000001 && cp pg_wal/000000010000000000000001 /archive/000000010000000000000001
+2026-10-15T19:52:15.316741337Z 2026-10-15 19:52:15.316 UTC [89] WARNING:  archiving write-ahead log file "000000010000000000000001" failed too many times, will try again later
+2026-10-15T19:56:11.306719897Z 2026-10-15 19:56:11.306 UTC [84] LOG:  checkpoint starting: time
+2026-10-15T19:57:48.931155333Z 2026-10-15 19:57:48.930 UTC [84] LOG:  checkpoint complete: wrote 994 buffers (6.1%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 3 recycled; write=97.528 s, sync=0.048 s, total=97.625 s; sync files=312, longest=0.006 s, average=0.001 s; distance=37127 kB, estimate=37127 kB; lsn=0/5000098, redo lsn=0/4441E18
+2026-10-15T20:00:28.027107587Z 2026-10-15 20:00:28.026 UTC [243] ERROR:  relation "drill.customer" does not exist at character 37
+2026-10-15T20:00:28.027145987Z 2026-10-15 20:00:28.026 UTC [243] STATEMENT:  SELECT
+2026-10-15T20:00:28.027150987Z 	       (SELECT COUNT(*) FROM drill.customer) AS customers,
+2026-10-15T20:00:28.027155287Z 	       (SELECT COUNT(*) FROM drill.dispatch) AS dispatches,
+2026-10-15T20:00:28.027158587Z 	       (SELECT COUNT(*) FROM drill.dispatch_line) AS lines,
+2026-10-15T20:00:28.027162087Z 	       (SELECT COUNT(*) FROM drill.activity) AS batches;
+2026-10-15T20:15:02.546252411Z 2026-10-15 20:15:02.545 UTC [84] LOG:  checkpoint starting: force wait
+2026-10-15T20:16:25.380846516Z 2026-10-15 20:16:25.380 UTC [84] LOG:  checkpoint complete: wrote 822 buffers (5.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 4 recycled; write=82.691 s, sync=0.026 s, total=82.835 s; sync files=64, longest=0.010 s, average=0.001 s; distance=61176 kB, estimate=61176 kB; lsn=0/9000060, redo lsn=0/8000028
+2026-10-15T20:20:02.515267794Z 2026-10-15 20:20:02.515 UTC [84] LOG:  checkpoint starting: time
+2026-10-15T20:20:05.096014679Z 2026-10-15 20:20:05.095 UTC [84] LOG:  checkpoint complete: wrote 25 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 2 recycled; write=2.514 s, sync=0.033 s, total=2.581 s; sync files=12, longest=0.014 s, average=0.003 s; distance=32969 kB, estimate=58355 kB; lsn=0/A032818, redo lsn=0/A0327C0
+2026-10-15T20:25:02.745483340Z 2026-10-15 20:25:02.745 UTC [84] LOG:  checkpoint starting: time
+2026-10-15T20:25:07.127674890Z 2026-10-15 20:25:07.127 UTC [84] LOG:  checkpoint complete: wrote 43 buffers (0.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 5 recycled; write=4.320 s, sync=0.015 s, total=4.383 s; sync files=8, longest=0.009 s, average=0.002 s; distance=81798 kB, estimate=81798 kB; lsn=0/F014060, redo lsn=0/F013FF0

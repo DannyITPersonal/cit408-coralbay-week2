@@ -1,0 +1,5 @@
+ customer_table | dispatch_table | dispatch_line_table 
+----------------+----------------+---------------------
+ drill.customer | drill.dispatch | drill.dispatch_line
+(1 row)
+

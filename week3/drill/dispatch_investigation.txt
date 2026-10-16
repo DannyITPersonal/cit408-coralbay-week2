@@ -1,0 +1,5 @@
+ total_dispatches | zero_freight | total_freight 
+------------------+--------------+---------------
+            22100 |            0 |   27474865.68
+(1 row)
+

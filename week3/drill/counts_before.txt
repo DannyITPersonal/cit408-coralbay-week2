@@ -1,0 +1,8 @@
+ table_schema |  table_name   | row_count 
+--------------+---------------+-----------
+ drill        | activity      |         0
+ drill        | customer      |       500
+ drill        | dispatch      |     20000
+ drill        | dispatch_line |     50000
+(4 rows)
+
